@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <title>南方电网接地极仿真计算平台后台管理子系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/bower_components/bootstrap-table/dist/bootstrap-table.min.css" />
+    <link rel="stylesheet" href="/stylesheets/unicorn.main.css" />
+    <link rel="stylesheet" href="/stylesheets/uniform.css" />
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/javascripts/tableExport.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap-table/dist/bootstrap-table.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-table/dist/locale/bootstrap-table-zh-CN.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-table/dist/extensions/export/bootstrap-table-export.js"></script>
+
+</head>
+<body>
+<div id="header">
+    <h1>南方电网接地极仿真计算平台后台管理子系统</h1>
+</div>
+<div id="user-nav" class="btn-group dropdown">
+    <button class="btn btn-info dropdown-toggle"
+            style="margin-right: 5px;" id="dropdownMenu1" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="true">
+        <i class="glyphicon glyphicon-user"></i> <span
+                class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right"
+        aria-labelledby="dropdownMenu1" aria-labelledby="dropdownMenuDivider">
+        <li><a href="#" type="button" onclick="">修改密码</a></li>
+    </ul>
+    <button class="btn btn-info" onclick="">
+        <li class="glyphicon glyphicon-share-alt"><a href="#"><span
+                        class="text">退出</span></a></li>
+    </button>
+</div>
+<div id="sidebar">
+    <ul>
+        <li class="active"><a href="users"><i
+                        class="glyphicon glyphicon-th-list"></i> <span>用户管理</span></a>
+        <li><a href="table"><i
+                        class="glyphicon glyphicon-th-list"></i> <span>部门管理</span></a></li>
+        <li><a href="foot"><i
+                        class="glyphicon glyphicon-th-list"></i> <span>项目管理</span></a></li>
+    </ul>
+</div>
+<div id="content">
+    <div id="content-header">
+        <h1>用户管理</h1>
+        <div class="btn-group">
+            <a class="btn btn-large tip-bottom" title="Manage Files"><i
+                        class="icon-file"></i></a> <a class="btn btn-large tip-bottom"
+                                                      title="Manage Users"><i class="icon-user"></i></a> <a
+                    class="btn btn-large tip-bottom" title="Manage Comments"><i
+                        class="icon-comment"></i><span class="label label-important">5</span></a>
+            <a class="btn btn-large tip-bottom" title="Manage Orders"><i
+                        class="icon-shopping-cart"></i></a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="widget-box">
+                    <div class="widget-title">
+                        <h5><%=title%></h5>
+                    </div>

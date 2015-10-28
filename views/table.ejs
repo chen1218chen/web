@@ -1,0 +1,55 @@
+<% include head.ejs %>
+<div class="widget-content nopadding">
+    <div id="custom-toolbar">
+        <a id="adduser" class="btn" data-target="#adduserModal"
+           onclick=""><i class="glyphicon glyphicon-plus">添加</i></a>
+        <a id="deluser" class="btn" data-method="remove"><i
+                    class="glyphicon glyphicon-remove">删除</i></a>
+    </div>
+    <table id="table" class="table table-bordered data-table"
+           data-show-toggle="true" data-search="true"
+           data-pagination="true" data-row-style="rowStyle"
+           data-toolbar="#custom-toolbar" data-height="600"
+           data-show-columns="true" data-show-export="true"
+           data-id-field="id" data-resizable="true">
+        <thead>
+        <tr>
+            <th data-field="state" data-align="center"
+                data-checkbox="true"></th>
+            <th data-align="center" data-formatter="runningFormatter">编号</th>
+            <th data-field="id" data-align="center" data-visible="false"
+                data-sortable="true">uid
+            </th>
+            <th data-field="uname" data-align="center"
+                data-sortable="true">名称
+            </th>
+            <th data-field="upassword" data-align="center"
+                data-sortable="true">密码
+            </th>
+            <th data-field="oid" data-align="center" data-sortable="true"
+                data-visible="false">oid
+            </th>
+            <th data-field="oname" data-align="center"
+                data-sortable="true">部门
+            </th>
+            <th data-field="uduty" data-align="center"
+                data-sortable="true">职务
+            </th>
+            <th data-field="uphone" data-align="center"
+                data-sortable="true">电话
+            </th>
+            <th data-field="operate" data-formatter="operateFormatter"
+                data-events="operateEvents" data-align="center">操作
+            </th>
+        </tr>
+        </thead>
+    </table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<% include foot.ejs %>
